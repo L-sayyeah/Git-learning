@@ -26,14 +26,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "D:/tools/anaconda/envs/newevn1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Pytorch_learn/Git-learning/Code/logs&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Pytorch_learn\Git-learning\Code\logs" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.transform1">
     <configuration name="CallTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Code" />
@@ -95,6 +100,9 @@
       <option name="presentableId" value="Default" />
       <updated>1741592801326</updated>
       <workItem from="1741592803577" duration="3684000" />
+      <workItem from="1742282696676" duration="138000" />
+      <workItem from="1742283051119" duration="142000" />
+      <workItem from="1742283876309" duration="133000" />
     </task>
     <servers />
   </component>
