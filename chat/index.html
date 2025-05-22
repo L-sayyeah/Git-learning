@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek 智能助手</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="brand-wrapper">
+                    <img src="logo.jpg" alt="DeepSeek Logo" class="brand-logo">
+                    <div class="brand-text">
+                        <h1 class="app-title">智能助手</h1>
+                        <p class="app-subtitle"></p>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <div class="control-item">
+                        <div class="search-label">
+                            <span>联网搜索</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="searchToggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-history" id="chatHistory">
+                <div class="welcome-message">
+                    <div class="welcome-card">
+                        <h2>欢迎使用 DeepSeek</h2>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-comment-alt"></i>
+                                <p>智能对话</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-search"></i>
+                                <p>实时搜索</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-code"></i>
+                                <p>代码高亮</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 用户消息 -->
+                <div class="message user-message">
+                    <div class="message-content">
+                        <p>用户提问内容...</p>
+                    </div>
+                </div>
+
+                <!-- AI回复 -->
+                <div class="message ai-message">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <i class="fas fa-robot"></i>
+                            <span>DeepSeek</span>
+                        </div>
+                        <p>AI回复内容...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <div class="input-area">
+                    <div class="input-group">
+                        <textarea id="question" 
+                                placeholder="输入您的问题..."
+                                rows="1"
+                                autocomplete="off"></textarea>
+                        <button class="send-button" aria-label="发送问题">
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="loading-indicator"></div>
+                        </button>
+                    </div>
+                    <div class="hint-text">Shift + Enter 换行</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.8/purify.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

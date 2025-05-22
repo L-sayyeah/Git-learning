@@ -1,0 +1,35 @@
+services:
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.30.3
+    restart: on-failure:0
+    ports:
+    - 8080:8080
+    - 50051:50051
+    environment:
+      QUERY_DEFAULTS_LIMIT: 20
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+      PERSISTENCE_DATA_PATH: "./data"
+      DEFAULT_VECTORIZER_MODULE: text2vec-transformers
+      ENABLE_MODULES: text2vec-transformers
+      TRANSFORMERS_INFERENCE_API: http://t2v-transformers:8080
+      CLUSTER_HOSTNAME: 'node1'
+  t2v-transformers:
+    image: cr.weaviate.io/semitechnologies/transformers-inference:sentence-transformers-multi-qa-MiniLM-L6-cos-v1
+    environment:
+      ENABLE_CUDA: 0 
+  
+  services:
+  # 其他服务保持不变...
+  
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    volumes:
+      - ./python-app:/app
+    working_dir: /app
+    depends_on:
+      weaviate:
+        condition: service_healthy
+    command: tail -f /dev/null  # 保持容器运行，便于交互式开发
+  

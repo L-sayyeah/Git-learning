@@ -1,0 +1,13 @@
+flask_cors=3.0.10
+flask_limiter=3.12
+flask=3.1.0
+requests=2.32.3
+dotenv
+bs4=4.12.3
+duckduckgo_search=8.0.2
+langchain=0.3.25
+langchain-community=0.3.24
+sentence_transformers=4.1.0
+weaviate
+weaviate-client=4.14.3
+

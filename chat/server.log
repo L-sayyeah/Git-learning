@@ -1,0 +1,301 @@
+2025-02-24 14:21:31,184 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.49.253:8088
+2025-02-24 14:21:31,185 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-24 14:25:38,140 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.49.253:8088
+2025-02-24 14:25:38,140 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-24 14:26:17,152 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:26:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:26:21,964 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-24 14:26:21,969 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-24 14:26:29,793 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:26:29] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:31:39,507 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:31:39] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:31:43,548 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-24 14:31:43,551 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨¿Ìπ§¥Û—ß2024ƒÍ»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-24 14:32:03,493 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:32:03] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:32:44,690 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:32:44] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:32:58,041 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-24 14:32:58,043 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒÍ∫Û] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-24 14:33:18,712 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:33:18] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:37:50,540 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:37:50] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:37:54,139 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-24 14:37:54,142 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒﬁ∫Áµ∆] -> …˙≥…πÿº¸¥ ['ƒﬁ∫Áµ∆']
+2025-02-24 14:38:24,355 - ERROR - test.py:90 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-24 14:38:24,356 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:38:24] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-24 14:42:02,135 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:42:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:42:18,900 - ERROR - test.py:121 - JSONΩ‚Œˆ ß∞‹: Expecting value: line 1 column 1 (char 0)
+‘≠ ºƒ⁄»›∆¨∂Œ: ƒ„∫√£°“‘œ¬ «πÿ”⁄**¥Û¡¨¿Ìπ§¥Û—ß**‘⁄2024ƒÍ»Ìø∆÷–π˙¥Û—ß≈≈√˚÷–µƒœÍœ∏–≈œ¢£∫
+
+- **¥Û¡¨¿Ìπ§¥Û—ß**‘⁄»´π˙∏ﬂ–£÷–≈≈√˚**µ⁄28Œª**°£
+- **¥Û¡¨ –À´“ª¡˜¥Û—ß√˚µ•º∞≈≈√˚**£∫
+  - **¥Û¡¨¿Ìπ§¥Û—ß**£∫≈≈√˚µ⁄28
+  - **¥Û¡¨∫£ ¬¥Û—ß**£∫≈≈√˚µ⁄111
+
+’‚–© ˝æ›¿¥‘¥”⁄2024ƒÍ»Ìø∆÷–π˙¥Û—ß≈≈√˚µƒπŸ∑Ω∑¢≤º£¨∑¥”≥¡À∏˜∏ﬂ–£µƒ◊€∫œ µ¡¶∫Õ—ß ıÀÆ∆Ω°£»Áπ˚ƒ„–Ë“™¡ÀΩ‚∏¸∂‡πÿ”⁄¥Û¡¨¿Ìπ§¥Û—ßªÚ∆‰À˚∏ﬂ...
+2025-02-24 14:42:20,660 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-24 14:42:20,662 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-24 14:42:32,834 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:42:32] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:42:44,350 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:42:44] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:42:53,325 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:42:53] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:43:13,364 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:43:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:43:15,565 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:43:15] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:43:23,351 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:43:23] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:43:49,553 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:43:49] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:44:00,713 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:44:05,503 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:05] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:44:16,272 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:44:20,797 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:20] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:44:29,656 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:44:33,741 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:33] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:44:49,974 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:44:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:45:03,324 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:45:03] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:45:46,607 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:45:46] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:45:54,234 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:45:54] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:54:05,484 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:54:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:54:11,525 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:54:11] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:55:36,200 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:55:36] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:55:39,859 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:55:39] "POST /chat HTTP/1.1" 200 -
+2025-02-24 14:55:59,810 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:55:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-24 14:56:03,023 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-24 14:56:03,024 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨2024ƒÍGDP] -> …˙≥…πÿº¸¥ ['¥Û¡¨2024ƒÍGDP']
+2025-02-24 14:56:16,679 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Feb/2025 14:56:16] "POST /chat HTTP/1.1" 200 -
+2025-02-25 16:33:50,061 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 16:33:50,062 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 16:44:13,275 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 16:44:13,275 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 16:46:08,183 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 16:46:08,184 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 16:46:12,580 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 16:46:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 16:46:16,611 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 16:46:16,611 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 16:46:20,193 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 16:46:20] "POST /chat HTTP/1.1" 200 -
+2025-02-25 16:46:21,698 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 16:46:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 16:46:40,314 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 16:46:40,319 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¿Ìπ§¥Û—ß] -> …˙≥…πÿº¸¥ ['¿Ìπ§¥Û—ß']
+2025-02-25 16:47:10,508 - ERROR - test.py:90 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 16:47:10,509 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 16:47:10] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 16:47:58,619 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 16:47:58] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 16:48:07,863 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 16:48:07,865 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 16:48:34,913 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 16:48:34] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:03:05,571 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:03:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:03:09,589 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:03:09,591 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 19:03:10,766 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:03:10] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:14:17,660 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:14:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:14:20,793 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:14:20,796 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 19:14:26,707 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:14:26] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:21:24,338 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:21:24] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:21:28,489 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:21:28,489 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 19:21:30,567 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:21:30] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:23:29,797 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:23:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:23:52,249 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:23:52,251 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√≈∂] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 19:23:52,359 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:23:52] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:23:54,266 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:23:54] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:23:57,637 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 19:23:57,641 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 19:24:01,742 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:24:01] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:34:46,961 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:34:46] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:34:52,002 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:34:52] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:35:19,899 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:35:19] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:35:27,669 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:35:27] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:35:31,566 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:35:31] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:35:35,412 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:35:35] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:35:50,291 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:35:50] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:35:51,335 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:35:51] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:36:09,881 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:36:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:36:17,191 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:36:17] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:39:53,805 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:39:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:39:58,433 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:39:58] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:40:07,130 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:40:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:40:11,858 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:40:11,860 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 19:40:15,277 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:40:15] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:40:29,173 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:40:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:40:34,429 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 19:40:34,431 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[Œ“œÎ÷™µ¿¥Û¡¨¿Ìπ§¥Û—ß2024ƒÍ»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 19:40:41,946 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:40:41] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:41:15,472 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:41:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:41:19,439 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 19:41:19,442 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ—µ¿≤ª «28√˚¬] -> …˙≥…πÿº¸¥ ['28√˚']
+2025-02-25 19:41:49,650 - ERROR - test.py:90 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 19:41:49,651 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:41:49] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:41:56,083 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:41:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:42:01,344 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:42:01,347 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„»∑∂®¬£¨¥Û¡¨¿Ìπ§¥Û—ßø… «¿Ìπ§¿‡‘∫–£] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß', '¿Ìπ§¿‡‘∫–£']
+2025-02-25 19:42:05,998 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:42:05] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:42:28,884 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:42:28] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:42:33,300 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:42:33,302 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[Œ“œÎ÷ÿ–¬÷™µ¿2024ƒÍ¥Û¡¨¿Ìπ§¥Û—ß»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 19:42:40,481 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:42:40] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:43:09,236 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:43:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:43:14,818 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 19:43:14,820 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨¿Ìπ§¥Û—ß2024ƒÍ»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 19:43:23,372 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:43:23] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:48:39,614 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:48:39] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:48:42,992 - INFO - duckduckgo_search.py:254 - Error to search using html backend: https://html.duckduckgo.com/html ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+2025-02-25 19:48:45,589 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 19:48:45,591 - INFO - test.py:199 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['Œ ∫Ú']
+2025-02-25 19:48:50,622 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 19:48:50,622 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 19:48:55,038 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:48:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:48:55,581 - ERROR - test.py:124 - API«Î«Û ß∞‹: 429
+2025-02-25 19:48:55,582 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:48:55] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:49:20,730 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:49:20] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:49:21,316 - ERROR - test.py:124 - API«Î«Û ß∞‹: 429
+2025-02-25 19:49:21,317 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:49:21] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:50:09,454 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 19:50:09,454 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 19:50:14,176 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:50:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:50:43,590 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 19:50:43,592 - INFO - test.py:236 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 19:51:13,816 - ERROR - test.py:127 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 19:51:13,817 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:51:13] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:51:14,171 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:51:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:51:33,383 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:51:33] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:54:50,105 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:54:50] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:55:20,578 - ERROR - test.py:127 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 19:55:20,579 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:55:20] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:55:35,534 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:55:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:56:06,050 - ERROR - test.py:127 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 19:56:06,051 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:56:06] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:56:32,757 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 19:56:32,757 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 19:56:40,185 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:56:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:57:03,030 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:57:03] "POST /chat HTTP/1.1" 200 -
+2025-02-25 19:57:42,400 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:57:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:58:12,863 - ERROR - test.py:115 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 19:58:12,864 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:58:12] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:58:34,567 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 19:58:34,568 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 19:58:38,738 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:58:38] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:58:39,235 - ERROR - test.py:112 - API«Î«Û ß∞‹: 429
+2025-02-25 19:58:39,235 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:58:39] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:58:49,603 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:58:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:58:50,171 - ERROR - test.py:112 - API«Î«Û ß∞‹: 429
+2025-02-25 19:58:50,171 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:58:50] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:59:09,381 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 19:59:09,382 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 19:59:14,510 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:59:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 19:59:15,003 - ERROR - test.py:112 - API«Î«Û ß∞‹: 429
+2025-02-25 19:59:15,005 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:59:15] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 19:59:54,469 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 19:59:54,470 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 19:59:58,350 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 19:59:58] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:00:04,859 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:00:04] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:02:43,160 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:02:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:02:49,535 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:02:49] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:03:02,346 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:03:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:03:06,831 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 20:03:06,835 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨¿Ìπ§¥Û—ß2024ƒÍ»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 20:03:23,601 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:03:23] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:04:55,547 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:04:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:05:24,248 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:05:24] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:05:25,997 - ERROR - test.py:115 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 20:05:25,998 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:05:25] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:05:54,751 - ERROR - test.py:115 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 20:05:54,752 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:05:54] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:05:59,714 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:05:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:06:18,848 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:06:18] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:07:23,568 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:07:23] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:07:29,413 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:07:29] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:08:02,317 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:08:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:08:16,902 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:08:16] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:08:29,686 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:08:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:09:00,199 - ERROR - test.py:115 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 20:09:00,199 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:09:00] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:09:25,621 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:09:25] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:09:38,581 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:09:38] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:10:15,662 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:10:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:10:34,805 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:10:34] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:11:06,663 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:11:06] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:11:13,363 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 20:11:13,366 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„ƒ‹∏ÊÀﬂŒ“¥Û¡¨¿Ìπ§¥Û—ßµƒ»Ìø∆≈≈√˚¬] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 20:11:27,544 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:11:27] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:11:59,613 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:11:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:12:03,283 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 20:12:03,285 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[ƒ„∫√] -> …˙≥…πÿº¸¥ ['ƒ„∫√']
+2025-02-25 20:12:10,557 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:12:10] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:12:37,651 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:12:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:12:43,600 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:12:43] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:12:53,939 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:12:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:13:08,796 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 20:13:08,798 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨¿Ìπ§¥Û—ß»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 20:13:39,018 - ERROR - test.py:115 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 20:13:39,019 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:13:39] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:14:25,201 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:14:25] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:14:29,698 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:14:29] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:14:43,813 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:14:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:14:47,410 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 20:14:47,414 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨¿Ìπ§¥Û—ß»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 20:15:15,422 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:15:15] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:15:31,493 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:15:31] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:15:41,458 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 200 OK"
+2025-02-25 20:15:41,460 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[◊€∫œ∆¿º€“ªœ¬¥Û¡¨¿Ìπ§¥Û—ß] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚', '¥Û¡¨¿Ìπ§¥Û—ß ±£—–¬ ', '¥Û¡¨¿Ìπ§¥Û—ß …Ó‘Ï¬ ', '¥Û¡¨¿Ìπ§¥Û—ß ±œ“µ…˙∆–Ω', '¥Û¡¨¿Ìπ§¥Û—ß ◊®“µ≈‡—¯∑Ω∞∏']
+2025-02-25 20:16:11,673 - ERROR - test.py:115 - APIµ˜”√“Ï≥£: HTTPSConnectionPool(host='api.siliconflow.cn', port=443): Read timed out. (read timeout=30)
+2025-02-25 20:16:11,674 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:16:11] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:17:01,048 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:17:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:17:08,998 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:17:08] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:17:18,625 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:17:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:17:22,349 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 403 Forbidden"
+2025-02-25 20:17:22,349 - INFO - duckduckgo_search.py:254 - Error to search using html backend: https://html.duckduckgo.com/html 403 Ratelimit
+2025-02-25 20:17:24,219 - INFO - _client.py:1025 - HTTP Request: POST https://lite.duckduckgo.com/lite/ "HTTP/2 403 Forbidden"
+2025-02-25 20:17:24,220 - INFO - duckduckgo_search.py:254 - Error to search using lite backend: https://lite.duckduckgo.com/lite/ 403 Ratelimit
+2025-02-25 20:17:24,220 - ERROR - test.py:83 - À—À˜ ß∞‹: https://lite.duckduckgo.com/lite/ 403 Ratelimit
+2025-02-25 20:17:24,221 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[◊€∫œ∆¿º€¥Û¡¨¿Ìπ§¥Û—ß] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 20:17:53,595 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:17:53] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:18:56,480 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:18:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:19:05,940 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:19:05] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:19:17,867 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:19:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:19:30,819 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:19:30] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:19:42,650 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:19:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:19:46,769 - INFO - _client.py:1025 - HTTP Request: POST https://html.duckduckgo.com/html "HTTP/2 200 OK"
+2025-02-25 20:19:46,770 - INFO - test.py:224 - πÿº¸¥ …˙≥…÷ ¡ø: ‘≠ ºŒ Ã‚[¥Û¡¨¿Ìπ§¥Û—ß»Ìø∆≈≈√˚] -> …˙≥…πÿº¸¥ ['¥Û¡¨¿Ìπ§¥Û—ß 2024 »Ìø∆≈≈√˚']
+2025-02-25 20:19:59,798 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:19:59] "POST /chat HTTP/1.1" 200 -
+2025-02-25 20:20:21,664 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:20:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:20:22,209 - ERROR - test.py:112 - API«Î«Û ß∞‹: 429
+2025-02-25 20:20:22,209 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:20:22] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:20:43,507 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:20:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:20:44,136 - ERROR - test.py:112 - API«Î«Û ß∞‹: 429
+2025-02-25 20:20:44,136 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:20:44] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-02-25 20:21:01,751 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8088
+ * Running on http://172.16.55.138:8088
+2025-02-25 20:21:01,751 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2025-02-25 20:21:27,429 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:21:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-02-25 20:21:27,927 - ERROR - test.py:109 - API«Î«Û ß∞‹: 429
+2025-02-25 20:21:27,927 - INFO - _internal.py:97 - 127.0.0.1 - - [25/Feb/2025 20:21:27] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -

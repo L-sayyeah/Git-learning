@@ -1,0 +1,664 @@
+2025-05-21 22:09:40,664 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-21 22:09:44,870 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-21 22:09:48,777 - __main__ - ERROR - 请求 https://blog.csdn.net/2301_80338712/article/details/148105936 失败: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /2301_80338712/article/details/148105936 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /2301_80338712/article/details/148105936 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /2301_80338712/article/details/148105936 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-21 22:09:49,226 - __main__ - ERROR - 请求 https://developer.aliyun.com/article/1641882 失败: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-21 22:09:49,230 - __main__ - INFO - 搜索完成，共返回 1 条结果
+2025-05-21 22:10:00,982 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-21 22:10:02,317 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-21 22:10:02,849 - __main__ - ERROR - 请求 https://developer.aliyun.com/article/1641882 失败: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-21 22:10:02,939 - __main__ - ERROR - 请求 https://blog.csdn.net/DJV29807654/article/details/146298589 失败: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /DJV29807654/article/details/146298589 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /DJV29807654/article/details/146298589 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /DJV29807654/article/details/146298589 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-21 22:10:02,940 - __main__ - INFO - 搜索完成，共返回 1 条结果
+2025-05-22 02:12:51,159 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 02:12:53,070 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-22 02:12:54,558 - __main__ - ERROR - 请求 https://developer.aliyun.com/article/1641882 失败: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='developer.aliyun.com', port=443): Max retries exceeded with url: /article/1641882 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-22 02:12:54,818 - __main__ - ERROR - 请求 https://zhuanlan.zhihu.com/p/897549149 失败: HTTPSConnectionPool(host='zhuanlan.zhihu.com', port=443): Max retries exceeded with url: /p/897549149 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='zhuanlan.zhihu.com', port=443): Max retries exceeded with url: /p/897549149 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='zhuanlan.zhihu.com', port=443): Max retries exceeded with url: /p/897549149 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-22 02:12:54,819 - __main__ - INFO - 搜索完成，共返回 1 条结果
+2025-05-22 02:13:58,270 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 02:13:59,433 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-22 02:13:59,899 - __main__ - ERROR - 请求 https://zhuanlan.zhihu.com/p/897549149 失败: HTTPSConnectionPool(host='zhuanlan.zhihu.com', port=443): Max retries exceeded with url: /p/897549149 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='zhuanlan.zhihu.com', port=443): Max retries exceeded with url: /p/897549149 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='zhuanlan.zhihu.com', port=443): Max retries exceeded with url: /p/897549149 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-22 02:14:01,812 - __main__ - ERROR - 请求 https://blog.csdn.net/DJV29807654/article/details/146298589 失败: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /DJV29807654/article/details/146298589 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /DJV29807654/article/details/146298589 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 48, in search
+    response = requests.get(url, headers=headers, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lsy/anaconda3/envs/rag/lib/python3.12/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='blog.csdn.net', port=443): Max retries exceeded with url: /DJV29807654/article/details/146298589 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-05-22 02:14:01,824 - __main__ - INFO - 搜索完成，共返回 1 条结果
+2025-05-22 03:14:19,382 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 03:14:19,390 - __main__ - ERROR - 搜索失败: name 'CONFIG' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 33, in search
+    max_results=CONFIG["search"]["max_results"],
+                ^^^^^^
+NameError: name 'CONFIG' is not defined. Did you mean: 'Config'?
+2025-05-22 17:57:16,915 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 17:57:17,129 - __main__ - ERROR - 搜索失败: name 'CONFIG' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 33, in search
+    max_results=CONFIG["search"]["max_results"],
+                ^^^^^^
+NameError: name 'CONFIG' is not defined. Did you mean: 'Config'?
+2025-05-22 17:58:10,556 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 17:58:10,566 - __main__ - ERROR - 搜索失败: name 'CONFIG' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 33, in search
+    max_results=CONFIG["search"]["max_results"],
+                ^^^^^^
+NameError: name 'CONFIG' is not defined. Did you mean: 'Config'?
+2025-05-22 17:58:14,996 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 17:58:15,004 - __main__ - ERROR - 搜索失败: name 'CONFIG' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 33, in search
+    max_results=CONFIG["search"]["max_results"],
+                ^^^^^^
+NameError: name 'CONFIG' is not defined. Did you mean: 'Config'?
+2025-05-22 17:58:23,572 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 17:58:23,575 - __main__ - ERROR - 搜索失败: name 'CONFIG' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 33, in search
+    max_results=CONFIG["search"]["max_results"],
+                ^^^^^^
+NameError: name 'CONFIG' is not defined. Did you mean: 'Config'?
+2025-05-22 17:58:25,035 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 17:58:25,039 - __main__ - ERROR - 搜索失败: name 'CONFIG' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 33, in search
+    max_results=CONFIG["search"]["max_results"],
+                ^^^^^^
+NameError: name 'CONFIG' is not defined. Did you mean: 'Config'?
+2025-05-22 17:59:45,660 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 17:59:45,760 - __main__ - ERROR - 搜索失败: name 'keyords' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 32, in search
+    keywords=keyords,
+             ^^^^^^^
+NameError: name 'keyords' is not defined. Did you mean: 'keywords'?
+2025-05-22 18:00:19,460 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 18:00:19,497 - __main__ - ERROR - 搜索失败: name 'keyords' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 32, in search
+    keywords=keyords,
+             ^^^^^^^
+NameError: name 'keyords' is not defined. Did you mean: 'keywords'?
+2025-05-22 18:00:56,110 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 18:00:56,114 - __main__ - ERROR - 搜索失败: name 'keyords' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 32, in search
+    keywords=keyords,
+             ^^^^^^^
+NameError: name 'keyords' is not defined. Did you mean: 'keywords'?
+2025-05-22 18:02:12,404 - __main__ - INFO - 开始搜索关键词: 量子计算原理
+2025-05-22 18:02:12,409 - __main__ - ERROR - 搜索失败: name 'keyords' is not defined
+Traceback (most recent call last):
+  File "/home/lsy/Desktop/RAG/search.py", line 32, in search
+    keywords=keyords,
+             ^^^^^^^
+NameError: name 'keyords' is not defined. Did you mean: 'keywords'?
+2025-05-22 18:03:33,446 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-05-22 18:04:20,502 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-22 18:04:44,424 - primp - INFO - response: https://html.duckduckgo.com/html 202
+2025-05-22 18:04:44,424 - duckduckgo_search.DDGS - INFO - Error to search using html backend: https://html.duckduckgo.com/html 202 Ratelimit
+2025-05-22 18:04:46,210 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-22 18:05:05,967 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200

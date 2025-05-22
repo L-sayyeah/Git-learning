@@ -1,0 +1,919 @@
+2025-05-21 21:16:02,798 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:16:02,823 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:16:02,849 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:16:02,849 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:16:03,422 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 200 OK"
+2025-05-21 21:16:03,424 - __main__ - INFO - client: <weaviate.client.WeaviateClient object at 0x74c468521310>: 
+
+2025-05-21 21:16:03,424 - langchain_text_splitters.base - WARNING - Created a chunk of size 3380, which is longer than the specified 500
+2025-05-21 21:16:03,424 - langchain_text_splitters.base - WARNING - Created a chunk of size 7262, which is longer than the specified 500
+2025-05-21 21:16:03,430 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Ggggg "HTTP/1.1 200 OK"
+2025-05-21 21:16:03,431 - __main__ - INFO - get: <weaviate.Collection config={
+  "name": "Ggggg",
+  "description": null,
+  "generative_config": null,
+  "inverted_index_config": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.2
+    },
+    "cleanup_interval_seconds": 60,
+    "index_null_state": false,
+    "index_property_length": false,
+    "index_timestamps": false,
+    "stopwords": {
+      "preset": "en",
+      "additions": null,
+      "removals": null
+    }
+  },
+  "multi_tenancy_config": {
+    "enabled": false,
+    "auto_tenant_creation": false,
+    "auto_tenant_activation": false
+  },
+  "properties": [
+    {
+      "name": "query",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    },
+    {
+      "name": "text",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    }
+  ],
+  "references": [],
+  "replication_config": {
+    "factor": 1,
+    "async_enabled": false,
+    "deletion_strategy": "NoAutomatedResolution"
+  },
+  "reranker_config": null,
+  "sharding_config": {
+    "virtual_per_physical": 128,
+    "desired_count": 1,
+    "actual_count": 1,
+    "desired_virtual_count": 128,
+    "actual_virtual_count": 128,
+    "key": "_id",
+    "strategy": "hash",
+    "function": "murmur3"
+  },
+  "vector_index_config": null,
+  "vector_index_type": null,
+  "vectorizer_config": null,
+  "vectorizer": null,
+  "vector_config": {
+    "custom_vector": {
+      "vectorizer": {
+        "vectorizer": "none",
+        "model": {},
+        "source_properties": null
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query_text": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query",
+          "text"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    }
+  }
+}>
+
+2025-05-21 21:16:03,433 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Ggggg "HTTP/1.1 200 OK"
+2025-05-21 21:16:04,049 - __main__ - INFO - quit
+
+2025-05-21 21:20:14,272 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:20:14,334 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:20:14,456 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:20:14,456 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:20:40,590 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 200 OK"
+2025-05-21 21:20:40,590 - __main__ - INFO - client: <weaviate.client.WeaviateClient object at 0x7ad5a36e2cf0>: 
+
+2025-05-21 21:20:40,591 - langchain_text_splitters.base - WARNING - Created a chunk of size 3380, which is longer than the specified 500
+2025-05-21 21:20:40,591 - langchain_text_splitters.base - WARNING - Created a chunk of size 7262, which is longer than the specified 500
+2025-05-21 21:20:40,592 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Hh "HTTP/1.1 200 OK"
+2025-05-21 21:20:40,592 - __main__ - INFO - get: <weaviate.Collection config={
+  "name": "Hh",
+  "description": null,
+  "generative_config": null,
+  "inverted_index_config": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.2
+    },
+    "cleanup_interval_seconds": 60,
+    "index_null_state": false,
+    "index_property_length": false,
+    "index_timestamps": false,
+    "stopwords": {
+      "preset": "en",
+      "additions": null,
+      "removals": null
+    }
+  },
+  "multi_tenancy_config": {
+    "enabled": false,
+    "auto_tenant_creation": false,
+    "auto_tenant_activation": false
+  },
+  "properties": [
+    {
+      "name": "query",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    },
+    {
+      "name": "text",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    }
+  ],
+  "references": [],
+  "replication_config": {
+    "factor": 1,
+    "async_enabled": false,
+    "deletion_strategy": "NoAutomatedResolution"
+  },
+  "reranker_config": null,
+  "sharding_config": {
+    "virtual_per_physical": 128,
+    "desired_count": 1,
+    "actual_count": 1,
+    "desired_virtual_count": 128,
+    "actual_virtual_count": 128,
+    "key": "_id",
+    "strategy": "hash",
+    "function": "murmur3"
+  },
+  "vector_index_config": null,
+  "vector_index_type": null,
+  "vectorizer_config": null,
+  "vectorizer": null,
+  "vector_config": {
+    "custom_vector": {
+      "vectorizer": {
+        "vectorizer": "none",
+        "model": {},
+        "source_properties": null
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query_text": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query",
+          "text"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    }
+  }
+}>
+
+2025-05-21 21:20:40,593 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Hh "HTTP/1.1 200 OK"
+2025-05-21 21:20:43,901 - __main__ - INFO - quit
+
+2025-05-21 21:24:59,629 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:24:59,700 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:24:59,841 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:24:59,841 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:25:00,224 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 422 Unprocessable Entity"
+2025-05-21 21:25:44,847 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:25:44,910 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:25:44,956 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:25:44,956 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:25:45,252 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 200 OK"
+2025-05-21 21:25:45,253 - __main__ - INFO - client: <weaviate.client.WeaviateClient object at 0x7245139caf00>: 
+
+2025-05-21 21:25:45,253 - langchain_text_splitters.base - WARNING - Created a chunk of size 3380, which is longer than the specified 500
+2025-05-21 21:25:45,253 - langchain_text_splitters.base - WARNING - Created a chunk of size 7262, which is longer than the specified 500
+2025-05-21 21:25:45,255 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/F "HTTP/1.1 200 OK"
+2025-05-21 21:39:36,163 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:39:36,217 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:39:36,260 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:39:36,260 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:39:36,821 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 200 OK"
+2025-05-21 21:39:36,821 - __main__ - INFO - client: <weaviate.client.WeaviateClient object at 0x712e9fdcae40>: 
+
+2025-05-21 21:39:36,821 - langchain_text_splitters.base - WARNING - Created a chunk of size 3380, which is longer than the specified 500
+2025-05-21 21:39:36,821 - langchain_text_splitters.base - WARNING - Created a chunk of size 7262, which is longer than the specified 500
+2025-05-21 21:39:36,851 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Fsf "HTTP/1.1 200 OK"
+2025-05-21 21:39:36,852 - __main__ - INFO - get: <weaviate.Collection config={
+  "name": "Fsf",
+  "description": null,
+  "generative_config": null,
+  "inverted_index_config": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.2
+    },
+    "cleanup_interval_seconds": 60,
+    "index_null_state": false,
+    "index_property_length": false,
+    "index_timestamps": false,
+    "stopwords": {
+      "preset": "en",
+      "additions": null,
+      "removals": null
+    }
+  },
+  "multi_tenancy_config": {
+    "enabled": false,
+    "auto_tenant_creation": false,
+    "auto_tenant_activation": false
+  },
+  "properties": [
+    {
+      "name": "query",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    },
+    {
+      "name": "text",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    }
+  ],
+  "references": [],
+  "replication_config": {
+    "factor": 1,
+    "async_enabled": false,
+    "deletion_strategy": "NoAutomatedResolution"
+  },
+  "reranker_config": null,
+  "sharding_config": {
+    "virtual_per_physical": 128,
+    "desired_count": 1,
+    "actual_count": 1,
+    "desired_virtual_count": 128,
+    "actual_virtual_count": 128,
+    "key": "_id",
+    "strategy": "hash",
+    "function": "murmur3"
+  },
+  "vector_index_config": null,
+  "vector_index_type": null,
+  "vectorizer_config": null,
+  "vectorizer": null,
+  "vector_config": {
+    "custom_vector": {
+      "vectorizer": {
+        "vectorizer": "none",
+        "model": {},
+        "source_properties": null
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query_text": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query",
+          "text"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    }
+  }
+}>
+
+2025-05-21 21:39:36,881 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Fsf "HTTP/1.1 200 OK"
+2025-05-21 21:40:26,340 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:40:26,464 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:40:26,505 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:40:26,506 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:40:27,504 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 200 OK"
+2025-05-21 21:40:27,505 - __main__ - INFO - client: <weaviate.client.WeaviateClient object at 0x7a2f509c2ed0>: 
+
+2025-05-21 21:40:27,505 - langchain_text_splitters.base - WARNING - Created a chunk of size 3380, which is longer than the specified 500
+2025-05-21 21:40:27,505 - langchain_text_splitters.base - WARNING - Created a chunk of size 7262, which is longer than the specified 500
+2025-05-21 21:40:27,507 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Fasf "HTTP/1.1 200 OK"
+2025-05-21 21:40:27,508 - __main__ - INFO - get: <weaviate.Collection config={
+  "name": "Fasf",
+  "description": null,
+  "generative_config": null,
+  "inverted_index_config": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.2
+    },
+    "cleanup_interval_seconds": 60,
+    "index_null_state": false,
+    "index_property_length": false,
+    "index_timestamps": false,
+    "stopwords": {
+      "preset": "en",
+      "additions": null,
+      "removals": null
+    }
+  },
+  "multi_tenancy_config": {
+    "enabled": false,
+    "auto_tenant_creation": false,
+    "auto_tenant_activation": false
+  },
+  "properties": [
+    {
+      "name": "query",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    },
+    {
+      "name": "text",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    }
+  ],
+  "references": [],
+  "replication_config": {
+    "factor": 1,
+    "async_enabled": false,
+    "deletion_strategy": "NoAutomatedResolution"
+  },
+  "reranker_config": null,
+  "sharding_config": {
+    "virtual_per_physical": 128,
+    "desired_count": 1,
+    "actual_count": 1,
+    "desired_virtual_count": 128,
+    "actual_virtual_count": 128,
+    "key": "_id",
+    "strategy": "hash",
+    "function": "murmur3"
+  },
+  "vector_index_config": null,
+  "vector_index_type": null,
+  "vectorizer_config": null,
+  "vectorizer": null,
+  "vector_config": {
+    "custom_vector": {
+      "vectorizer": {
+        "vectorizer": "none",
+        "model": {},
+        "source_properties": null
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query_text": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query",
+          "text"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    }
+  }
+}>
+
+2025-05-21 21:40:27,510 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Fasf "HTTP/1.1 200 OK"
+2025-05-21 21:40:45,850 - __main__ - INFO - quit
+
+2025-05-21 21:42:32,036 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-21 21:42:32,067 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-21 21:42:32,093 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-21 21:42:32,093 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-21 21:42:32,381 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 200 OK"
+2025-05-21 21:42:32,382 - __main__ - INFO - client: <weaviate.client.WeaviateClient object at 0x7596e7acacc0>: 
+
+2025-05-21 21:42:32,382 - langchain_text_splitters.base - WARNING - Created a chunk of size 3380, which is longer than the specified 500
+2025-05-21 21:42:32,382 - langchain_text_splitters.base - WARNING - Created a chunk of size 7262, which is longer than the specified 500
+2025-05-21 21:42:32,384 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Fadasf "HTTP/1.1 200 OK"
+2025-05-21 21:42:32,384 - __main__ - INFO - get: <weaviate.Collection config={
+  "name": "Fadasf",
+  "description": null,
+  "generative_config": null,
+  "inverted_index_config": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.2
+    },
+    "cleanup_interval_seconds": 60,
+    "index_null_state": false,
+    "index_property_length": false,
+    "index_timestamps": false,
+    "stopwords": {
+      "preset": "en",
+      "additions": null,
+      "removals": null
+    }
+  },
+  "multi_tenancy_config": {
+    "enabled": false,
+    "auto_tenant_creation": false,
+    "auto_tenant_activation": false
+  },
+  "properties": [
+    {
+      "name": "query",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    },
+    {
+      "name": "text",
+      "description": null,
+      "data_type": "text",
+      "index_filterable": true,
+      "index_range_filters": false,
+      "index_searchable": true,
+      "nested_properties": null,
+      "tokenization": "word",
+      "vectorizer_config": null,
+      "vectorizer": null,
+      "vectorizer_configs": {
+        "text2vec-transformers": {
+          "skip": false,
+          "vectorize_property_name": true
+        }
+      }
+    }
+  ],
+  "references": [],
+  "replication_config": {
+    "factor": 1,
+    "async_enabled": false,
+    "deletion_strategy": "NoAutomatedResolution"
+  },
+  "reranker_config": null,
+  "sharding_config": {
+    "virtual_per_physical": 128,
+    "desired_count": 1,
+    "actual_count": 1,
+    "desired_virtual_count": 128,
+    "actual_virtual_count": 128,
+    "key": "_id",
+    "strategy": "hash",
+    "function": "murmur3"
+  },
+  "vector_index_config": null,
+  "vector_index_type": null,
+  "vectorizer_config": null,
+  "vectorizer": null,
+  "vector_config": {
+    "custom_vector": {
+      "vectorizer": {
+        "vectorizer": "none",
+        "model": {},
+        "source_properties": null
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    },
+    "query_text": {
+      "vectorizer": {
+        "vectorizer": "text2vec-transformers",
+        "model": {
+          "poolingStrategy": "masked_mean",
+          "vectorizeClassName": true
+        },
+        "source_properties": [
+          "query",
+          "text"
+        ]
+      },
+      "vector_index_config": {
+        "multi_vector": null,
+        "quantizer": null,
+        "cleanup_interval_seconds": 300,
+        "distance_metric": "cosine",
+        "dynamic_ef_min": 100,
+        "dynamic_ef_max": 500,
+        "dynamic_ef_factor": 8,
+        "ef": -1,
+        "ef_construction": 128,
+        "filter_strategy": "sweeping",
+        "flat_search_cutoff": 40000,
+        "max_connections": 32,
+        "skip": false,
+        "vector_cache_max_objects": 1000000000000
+      }
+    }
+  }
+}>
+
+2025-05-21 21:42:32,385 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/schema/Fadasf "HTTP/1.1 200 OK"
+2025-05-21 21:42:40,954 - __main__ - INFO - quit
+
+2025-05-22 00:59:05,496 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2025-05-22 00:59:10,954 - httpx - INFO - HTTP Request: GET http://127.0.0.1:8080/v1/meta "HTTP/1.1 200 OK"
+2025-05-22 00:59:12,435 - httpx - INFO - HTTP Request: GET https://pypi.org/pypi/weaviate-client/json "HTTP/1.1 200 OK"
+2025-05-22 00:59:12,724 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-22 00:59:12,724 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-22 00:59:20,822 - httpx - INFO - HTTP Request: POST http://127.0.0.1:8080/v1/schema "HTTP/1.1 422 Unprocessable Entity"
